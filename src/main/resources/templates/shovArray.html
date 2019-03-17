@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>tablica produktow</h2>
+<table>
+    <thead>
+    <tr>
+        <th>nazwa</th>
+        <th>cena</th>
+        <th>suma</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="elements: ${arrayAtribute}">
+        <td th:text="${elements.name}"></td>
+        <td th:text="${elements.price}"></td>
+        <td th:text="${suma}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
