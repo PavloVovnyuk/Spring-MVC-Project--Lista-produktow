@@ -18,6 +18,10 @@ public class ListController {
         listService.addProd(product);
         return "products";
     }
+    @GetMapping("/")
+    public String showForm(){
+        return "form";
+    }
 
 
     @GetMapping("/list")
